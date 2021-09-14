@@ -164,9 +164,6 @@ if (typeof saveGame2.rockPerClick !== "undefined") gameData2.rockPerClick = save
 if (typeof saveGame2.rockPerClickCost !== "undefined") gameData2.rockPerClickCost = saveGame2.rockPerClickCost;
 if (typeof saveGame2.lastTick !== "undefined") gameData2.lastTick = saveGame2.lastTick;
 
-
-
-
 //Get the button:
 mybutton = document.getElementById("myBtn");
 

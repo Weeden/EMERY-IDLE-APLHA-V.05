@@ -9,7 +9,7 @@
   <script src="../JS/resources.js" charset="utf-8" type="text/javascript"></script>
   <script src="../js/upgrades.js" charset="utf-8" type="text/javascript"></script>
   <link rel="shortcut icon" type="image/jpg" href="/favicon.ico"/>
- <!----- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  --->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -17,48 +17,43 @@
     <meta charset="utf-8">
     <title>EMERY IDLE:: V.05</title>
 
-<div class="test1">
+<div class="test1 text-center fixed-top">
 
     <!----- <img src="../icons/crypto666.png" alt="bitcoins" width="75"
         height="75">
       <p id="bankCashMade" class="bank-cash-made, btn info">0 crypto</p>
 ---->
-      <img src="../icons/coins4.png" alt="coins" width="50"
-      height="50">
-      <p id="cashMade" class="money-made, btn default">0 coins</p>
-
-      <img src="../icons/log.png" alt="log" width="50"
-      height="50"> 
-    <p id="logsCut" class="gold-mined, btn logs">0 logs</p>
-
-    <img src="../icons/ore.png" alt="ore" width="50"
-         height="50">
-
-    <p id="rockMined" class="rock-mined, btn rock">0 ore</p>
-    <img src="../icons/fish5.png" alt="fish" width="75"
-    height="50">
-
-    <p id="fishCaught" class="fish-caught, btn info">0 fish</p>
+  <img src="../icons/coins4.png" alt="coins" width="50"
+  height="50">
+  <p id="cashMade" class="cash-made, btn default">0 coins</p>
+  <img src="../icons/log.png" alt="log" width="50"
+  height="50"> 
+  <p id="logsCut" class="gold-mined, btn logs">0 logs</p>
+  <img src="../icons/ore.png" alt="ore" width="50"
+  height="50">
+  <p id="rockMined" class="rock-mined, btn rock">0 ore</p>
+  <img src="../icons/fish5.png" alt="fish" width="75"
+  height="50">
+  <p id="fishCaught" class="fish-caught, btn info">0 fish</p>
 </div>
-
-<h1><img src="../icons/cabin3.png" alt="logo" width="250"
-  height="250"></h1>
-
-<!--    <h3>---IF YOU REFRESH YOUR BROWSER YOU'LL LOSE ALL PROGRESS---</h3>   -=---->
-      
-
-     <!---<h3><button class="btn danger"><a href="index.html">RESET</a></button></h3>---->
-    
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1><img src="../icons/cabin3.png" class="text-center" alt="logo" width="250"
+height="250"></h1>
+<!----
+<h3>---IF YOU REFRESH YOUR BROWSER YOU'LL LOSE ALL PROGRESS---</h3>
+<h3><button class="btn danger"><a href="index.html">RESET</a></button></h3>     
+---->
 </head>
 
 <body onload="myFunction()" style="margin:0;">
 <button onclick="topFunction()" id="myBtn" title="Go to top">BACK TO TOP</button>
-
-
-
-<div id="homeMenu" class="">
-
-<!---  <h2>Alpha V.06</h2>   ---->
+<!-----------           HOME MENU               ------->
+<div id="homeMenu" class="container-fluid text-center">
 
   <script>
     function showTime() {
@@ -68,7 +63,7 @@
     setInterval(showTime, 1000);
     </script>
      
-    <p>The current time is: <span id="clock"></span></p>
+<p>The current time is: <span id="clock"></span></p>
 <!---
     <script>
       function play() {
@@ -83,138 +78,128 @@
     <img src="icons/scroll.png" alt="scroll" width="50"
          height="50" onclick="info.html">
 ---->
-    <i class='iconLogs'></i>
+<i class='iconLogs'></i>
     
  <!---   <button class="stealButton", onclick="stealCash()">ROB BANK</button>     --->
-    <button class="woodButton", onclick="cutWood()">CHOP TREES</button>
-	  <button class="mineButton", onclick="mineRock()">MINE ROCKS</button>
-    <button class="fishButton", onclick="catchFish()">FISH SEA</button>
-<div></div>
-    
-<button class="btn"><i class="fa fa-home"></i>
+  <button class="woodButton", onclick="cutWood()">CHOP TREES</button>
+  <button class="mineButton", onclick="mineRock()">MINE ROCKS</button>
+  <button class="fishButton", onclick="catchFish()">FISH SEA</button>
+  <br>
 
-</div>
-
-</div>
-<div></div>
-<div></div>
-
-<img src="../icons/backpack2.png" alt="inventory" width="65"
+  <button class="btn"><i class="fa fa-home"></i>
+  </div>
+  <br>
+  <div class="text-center">
+  <img src="../icons/backpack2.png" class="text-center" alt="inventory" width="65"
   height="65" onclick="tab('backpackMenu')">    
-<img src="../icons/store1.png" alt="inventory" width="65"
+  <img src="../icons/store1.png" class="text-center" alt="inventory" width="65"
   height="65" onclick="tab('shopMenu')">   
-     
-</div>    
+  </div>
+
 <!------                BACKPACK MENU BELOW            ----->
 
-<div></div>
-    <div id="backpackMenu", class="test1">
+<div id="backpackMenu", class="test1">
 
-    <button class="btn success", onclick="tab('homeMenu')">Go back Home</button>
-    <div>
-
+      <button class="btn success", onclick="tab('homeMenu')">Go back Home</button>
+      <br>
       <img src="icons/axe.png" alt="fishingpole" width="50"
-         height="50">
-      
+      height="50"> 
       <button class="btn info", onclick="upgradeHatchet()", id="hatchetUpgrade">Hatchet (Current LVL 1) Cost: 100 coins</button>
-      <div></div>
+      <br>
       <img src="icons/mining222.png" alt="fishingpole" width="50"
       height="50">
-
       <button class="btn info", onclick="upgradePickaxe()",  id="perClickUpgrade2">Pickaxe (Current LVL 1) Cost: 100 coins</button>
       <img src="icons/fishingPole665.png" alt="fishingpole" width="50"
-         height="50">
+      height="50">
       <button class="btn info", onclick="upgradeFishingPole()",  id="perClickUpgrade3">Fishing Pole (Current LVL 1) Cost: 100 coins</button>
-     <!----- <button class="btn thief", onclick="upgradeThief()"  id="perClickUpgrade5">Upgrade Thieving Level Cost: $2000</button>--->
-    <div></div>
-    </div>
-    <div></div>
-    <!---                     SHOP MENU BELOW                  -->
-         </div>      
-         <div id="shopMenu", class="test1">
-          <button class="btn success", onclick="tab('homeMenu')">Go back to Home</button>
-          <div></div>
-          <div></div>
-            <img src="icons/crypto666.png" width="75"
-            height="75">
-            <li class="btn thief" style="display:inline-block;">
-              <p id="tp" class="t-points">0 TP</p>
-            </li>
-            <img src="icons/woodcutting4.png" width="75"
-            height="75">
-            <li class="btn success" style="display:inline-block;">
-              <p id="wcp" class="wood-cutting">0 WCP</p>
-            </li>
-            <img src="icons/mining5.png" width="75"
-            height="75">
-            <li class="btn default" style="display:inline-block;">
-              <p id="mp" class="mine-rock">0 MP</p>
-            </li>
-            <img src="icons/fish.png" width="75"  
-            height="75">
-            <li class="btn info" style="display:inline-block;">
-              <p id="fp" class="fishPoints">0 FP</p>
-            </li>
-        </ul>
-          <div></div>
-          <p>Use your skill points to advance your skill levels and gain more resources & sell your resources for new gear!</p>
-          <div></div>
-          <img src="../icons/coins4.png" alt="coins" width="50"
-          height="50">
-          <p id="cashMade" class="money-made, btn default">0 coins</p>
-          <div></div>
-          <button class="btn warning", onclick="tradeLogs()",  id="tradeLogs">Sell your logs for coins!</button>
-          <button class="btn warning", onclick="sellOre()",  id="sellOre">Sell your ore for coins!</button>
-          <button class="btn warning", onclick="sellFish()",  id="sellFish">Sell your fish for coins!</button>
-          <br>
-          <img src="icons/store2.png" height="65" width="75">
-          <button class="btn success", onclick="tab('miscShop')">General Store</button>
-          <img src="icons/boatStore.png" height="100" width="100">
-          <button class="btn info", onclick="tab('boatShop')">Boat Shop</button>
-          <div></div>
+</div>
+
+    <!---                     SHOP MENU BELOW                  -->     
+<div id="shopMenu", class="test1">
+   <button class="btn success", onclick="tab('homeMenu')">Go back to Home</button>
+    <br>
+   <img src="icons/crypto666.png" width="75"
+    height="75">
+   <li class="btn thief" style="display:inline-block;">          
+    <p id="tp" class="t-points">0 TP</p>
+    </li>
+    <img src="icons/woodcutting4.png" width="75"
+     height="75">
+    <li class="btn success" style="display:inline-block;">
+    <p id="wcp" class="wood-cutting">0 WCP</p>
+    </li>
+    <img src="icons/mining5.png" width="75"
+    height="75">
+    <li class="btn default" style="display:inline-block;">
+    <p id="mp" class="mine-rock">0 MP</p>
+    </li>
+    <img src="icons/fish.png" width="75"  
+    height="75">
+    <li class="btn info" style="display:inline-block;">
+    <p id="fp" class="fishPoints">0 FP</p>
+    </li>
+    </ul>
           
-        </div>
+    <p>Use your skill points to advance your skill levels and gain more resources & sell your resources for new gear!</p>
+ <!----         
+    <img src="../icons/coins4.png" alt="coins" width="50"
+    height="50">
+    <p id="money" class="cashMade, btn default">0 coins</p>
+---->
+    <br>
+          
+    <button class="btn warning", onclick="tradeLogs()",  id="tradeLogs">Sell your logs for coins!</button>
+    <button class="btn warning", onclick="sellOre()",  id="sellOre">Sell your ore for coins!</button>
+    <button class="btn warning", onclick="sellFish()",  id="sellFish">Sell your fish for coins!</button>
+    <br>
+    <img src="icons/store2.png" height="65" width="75">
+    <button class="btn success", onclick="tab('miscShop')">General Store</button>
+    <img src="icons/boatStore.png" height="100" width="100">
+    <button class="btn info", onclick="tab('boatShop')">Boat shop
+    <span class="badge badge-warning">NEW</span>
+    </button>          
+    </div>
 
 <!----               BOAT STORE                 ---->
-        <div id="boatShop" class="test1">
+<div id="boatShop" class="test1 text-center">
           <button class="btn success", onclick="tab('homeMenu')">Go back to Home</button>
+          <br>
           <p>Welcome to the Emery Boat Shop</p>
-          <div></div>
+          <br>
           <img src="icons/boat1.png" height="225" width="225">
           <button class="btn info", onclick="buyBoat()", id="buyBoat">Buy the Yamaha Speedster 1667</button>
-          <div></div>
+          <br>
           <img src="icons/boat2.png" height="225" width="225">
           <button class="btn info", onclick="buyBoat()", id="buyBoat">Buy the Kamaski Speeder 840</button>
-          <div></div>
+          <br>
           <img src="icons/boat3.png" height="225" width="225">
           <button class="btn info", onclick="buyBoat()", id="buyBoat">Buy the Kamaski Killski 442</button>
-          <div></div>
+          <br>
           <img src="icons/boat5.png" height="225" width="225">
           <button class="btn info", onclick="buyBoat()", id="buyBoat">Buy the Yamazaki Speed 222</button>
-          <div></div>
+          <br>
           <img src="icons/boat6.png" height="225" width="225">
           <button class="btn info", onclick="buyBoat()", id="buyBoat">Buy the Fishermen 5000</button>
-          <div></div>
-        </div>
+          
+</div>
 
 <!-----                     GENERAL STORE --------->
-      <div id="miscShop" class="test1">
+<div id="miscShop" class="test1 text-center">
         <button class="btn success", onclick="tab('homeMenu')">Go back to Home</button>
         <p>Welcome to the Emery General Store</p>
-        <div></div>
+        <br>
         <img src="icons/cig1.png" height="125" width="125">
         <button class="btn danger", onclick="buyCig()", id="buyCig">Buy Cigarettes</button>
-        <div></div>
+        <br>
         <img src="icons/liq1.png" height="125" width="125">
         <button class="btn danger", onclick="buyCig()", id="buyCig">Buy Liquor</button>
 
-      </div>
-      </div>
-      <div></div>
-    
-    <footer id="footer">
-      <h4>Made by Jaxariah | <a href="UPDATE.html" target="_blank">V.05 ALPHA UPDATE</a> | 2021</h4>
-    </footer>
-  </body>
+</div>
+<br>
+</body>    
+<footer id="footer" class="text-center">
+<h6>Made by Jaxariah | <a href="UPDATE.html" target="_blank">V.05 ALPHA UPDATE</a> | 2021</h6>
+</footer>
+
 </html>
 
