@@ -60,6 +60,7 @@ function stealCash() {          //theifing FUNCTION
   bank.bankMoney -= bank.moneyPerClick
   bank.tp += bank.tPoint      //adds thieving points for levels
   update("cashMade", (bank.money) + " coins")
+  update("money", (bank.money) + " coins")
   update("bankCashMade", (bank.bankMoney) + " bitcoin stolen!")
   update("tp", (bank.tp) + " TP EARNED")
 }

@@ -34,6 +34,7 @@
   <img src="../icons/fish5.png" alt="fish" width="75"
   height="50">
   <p id="fishCaught" class="fish-caught, btn info">0 fish</p>
+  <span class="badge badge-danger">APLHA V.05</span>
 </div>
   <br>
   <br>
@@ -47,9 +48,10 @@
 <h3>---IF YOU REFRESH YOUR BROWSER YOU'LL LOSE ALL PROGRESS---</h3>
 <h3><button class="btn danger"><a href="index.html">RESET</a></button></h3>     
 ---->
+
 </head>
 
-<body onload="myFunction()" style="margin:0;">
+<body onload="myFunction()" onload="tab('homeMenu')" style="margin:0;">
 <button onclick="topFunction()" id="myBtn" title="Go to top">BACK TO TOP</button>
 <!-----------           HOME MENU               ------->
 <div id="homeMenu" class="container-fluid text-center">
@@ -96,7 +98,6 @@ height="50" onclick="info.html">
     height="65" onclick="tab('shopMenu')">   
   </div>
   <br>
-  <br>
 
 <!------                BACKPACK MENU BELOW            ----->
 
@@ -123,6 +124,7 @@ height="50" onclick="info.html">
 <span class="badge badge-danger">In Development</span>
 <br>
 </div>
+<br>
     <!---                     SHOP MENU BELOW                  -->     
 <div id="shopMenu", class="test1">
     <br>
@@ -153,12 +155,18 @@ height="50" onclick="info.html">
     <br>        
     <p>Use your skill points to advance your skill levels and gain more resources.</p>
     <br>
-    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Info about Shops</button>
+    <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#demo">Info about Shops</button>
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1">Info about Skills</button>
     <br>
     <br>
     <div id="demo" class="collapse">
     This is where you can see your total Points gained from each skill and 
     go to different shops and trade your resources for coins at the bank!
+    </div>
+    <div id="demo1" class="collapse">
+      <p>Skills will soon have a level system.</p>
+      <br>
+      <p>At the moment all you can see is the amount of times you've clicked the resource button.</p>
     </div>
     <br>
     <img src="icons/store2.png" height="75" width="75">
@@ -167,7 +175,11 @@ height="50" onclick="info.html">
     </button>
     <img src="icons/bank.png" height="75" width="75">
     <button class="btn warning", onclick="tab('coinMenu')">Bank
+    <span class="badge badge-success">WORKING</span>
+<!---
+    <br>
     <span class="badge badge-warning">NEW</span>
+----->
     </button>
     <img src="icons/boatStore.png" height="75" width="75">
     <button class="btn info", onclick="tab('boatShop')">Boat shop
@@ -179,6 +191,7 @@ height="50" onclick="info.html">
     <span class="badge badge-danger">In Development</span>
     </button>
 </div>
+<br>
 <!----               BOAT STORE                 ---->
 <div id="boatShop" class="test1 text-center">
           <br>
@@ -202,6 +215,7 @@ height="50" onclick="info.html">
           <img src="icons/boat6.png" height="225" width="225">
           <button class="btn info", onclick="buyBoat()", id="buyBoat">Buy the Fishermen 5000</button>      
 </div>
+<br>
 <!-----                     GENERAL STORE --------->
 <div id="miscShop" class="test1 text-center">
         <button class="btn success", onclick="tab('homeMenu')">Go back to Home</button>
@@ -213,6 +227,7 @@ height="50" onclick="info.html">
         <img src="icons/liq1.png" height="125" width="125">
         <button class="btn danger", onclick="buyCig()", id="buyCig">Buy Liquor</button>
 </div>
+<br>
 <!-------                 BANK MENU                -------->
 <div id="coinMenu" class="text-center test1">
     <br>
@@ -223,6 +238,8 @@ height="50" onclick="info.html">
     <br>
     <img src="../icons/bank.png" height="400" width="400">
     <br>
+    <br>
+    <button class="stealButton", onclick="stealCash()">ROB BANK</button>
     <br>
     <br>
     <p>1 resource = 1 coin at the moment</p>
@@ -252,6 +269,7 @@ height="50" onclick="info.html">
     <br>
     <p>Welcome to the Emery Pet Shop</p>
     <br>
+    <p>Food</p>
     <br>
     <img src="icons/petFood1.png" height="125" width="125">
     <button class="btn info", onclick="buyPetFood()", id="buyFood1">Buy Canned Pet Food</button>
@@ -259,6 +277,13 @@ height="50" onclick="info.html">
     <img src="icons/petFood2.png" height="125" width="125">
     <button class="btn info", onclick="buyPetFood()", id="buyFood2">Buy Dry Food</button>
     <br>
+    <p>Reptiles</p>
+    <br>
+    <img src="icons/burmesePython.png" height="125" width="125">
+    <button class="btn info", onclick="buySnakeBurm()", id="buySnake1">Buy Bermese Python</button>
+    <br>
+    <img src="icons/rattleSnake.png" height="125" width="125">
+    <button class="btn info", onclick="buySnakeRattler1()", id="buySnake2">Buy Rattlesnake</button>
 </div>
 </body>
 <br>

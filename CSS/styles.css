@@ -273,7 +273,7 @@ h4  {
   cursor: pointer;
   outline: none;
   color: #fff;
-  background-color: #e0bf00;
+  background-color: #6800e0;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
@@ -339,7 +339,7 @@ h4  {
 }
 
 .stealButton:active {
-  background-color: #d49e08;
+  background-color: #4d4d4d;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
