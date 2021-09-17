@@ -95,6 +95,8 @@ height="50" onclick="info.html">
   <img src="../icons/store1.png" class="text-center" alt="inventory" width="65"
     height="65" onclick="tab('shopMenu')">   
   </div>
+  <br>
+  <br>
 
 <!------                BACKPACK MENU BELOW            ----->
 
@@ -127,13 +129,6 @@ height="50" onclick="info.html">
     <button class="btn success", onclick="tab('homeMenu')">Go back to Home</button>
     <br>
     <br>
-    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Information</button>
-    <br>
-    <div id="demo" class="collapse">
-    This is where you can go to different shops and trade your resources for coins at the bank!
-    </div>
-    <br>
-    <br>
    <img src="icons/crypto666.png" width="75"
     height="75">
    <li class="btn thief" style="display:inline-block;">          
@@ -156,7 +151,15 @@ height="50" onclick="info.html">
     </li>
     </ul>
     <br>        
-    <p>Use your skill points to advance your skill levels and gain more resources & sell your resources for new gear!</p>
+    <p>Use your skill points to advance your skill levels and gain more resources.</p>
+    <br>
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Info about Shops</button>
+    <br>
+    <br>
+    <div id="demo" class="collapse">
+    This is where you can see your total Points gained from each skill and 
+    go to different shops and trade your resources for coins at the bank!
+    </div>
     <br>
     <img src="icons/store2.png" height="75" width="75">
     <button class="btn success", onclick="tab('miscShop')">General Store
@@ -168,6 +171,11 @@ height="50" onclick="info.html">
     </button>
     <img src="icons/boatStore.png" height="75" width="75">
     <button class="btn info", onclick="tab('boatShop')">Boat shop
+    <span class="badge badge-danger">In Development</span>
+    </button>
+    <br>
+    <img src="icons/petStore1.png" height="75" width="75">
+    <button class="btn info", onclick="tab('petShop')">Pet shop
     <span class="badge badge-danger">In Development</span>
     </button>
 </div>
@@ -225,13 +233,33 @@ height="50" onclick="info.html">
     <br>
     <br>
     <br>
+    <img src="../icons/log.png" alt="log" width="50"
+    height="50">
     <button class="btn warning", onclick="tradeLogs()",  id="tradeLogs">Sell your logs for coins</button>
+    <img src="../icons/ore.png" alt="ore" width="50"
+    height="50">
     <button class="btn warning", onclick="sellOre()",  id="sellOre">Sell your ore for coins</button>
+    <img src="../icons/fish5.png" alt="fish" width="75"
+    height="50">
     <button class="btn warning", onclick="sellFish()",  id="sellFish">Sell your fish for coins</button>
     <br>
     <br>
 </div>
 <br>
+<div id="petShop" class="text-center test1">
+    <br>
+    <button class="btn success", onclick="tab('homeMenu')">Go back to Home</button>
+    <br>
+    <p>Welcome to the Emery Pet Shop</p>
+    <br>
+    <br>
+    <img src="icons/petFood1.png" height="125" width="125">
+    <button class="btn info", onclick="buyPetFood()", id="buyFood1">Buy Canned Pet Food</button>
+    <br>
+    <img src="icons/petFood2.png" height="125" width="125">
+    <button class="btn info", onclick="buyPetFood()", id="buyFood2">Buy Dry Food</button>
+    <br>
+</div>
 </body>
 <br>
 <br>    

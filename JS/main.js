@@ -12,6 +12,8 @@ function tab(tab) {
   document.getElementById("boatShop").style.display = "none"
   document.getElementById("miscShop").style.display = "none"
   document.getElementById("backpackMenu").style.display = "none"
+  document.getElementById("coinMenu").style.display = "none"
+  document.getElementById("petShop").style.display = "none"
   document.getElementById(tab).style.display = "inline-block"
 }
 // go to a tab for the first time, so not all show
